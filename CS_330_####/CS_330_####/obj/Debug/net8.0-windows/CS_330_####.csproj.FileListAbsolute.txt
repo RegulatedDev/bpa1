@@ -14,3 +14,6 @@ P:\csharp\CS_330_####\CS_330_####\obj\Debug\net8.0-windows\refint\CS_330_####.dl
 P:\csharp\CS_330_####\CS_330_####\obj\Debug\net8.0-windows\CS_330_####.pdb
 P:\csharp\CS_330_####\CS_330_####\obj\Debug\net8.0-windows\CS_330_####.genruntimeconfig.cache
 P:\csharp\CS_330_####\CS_330_####\obj\Debug\net8.0-windows\ref\CS_330_####.dll
+C:\Users\regulated\Desktop\schoolvs\bpa1\CS_330_####\CS_330_####\obj\Debug\net8.0-windows\CS_330_####.dll
+C:\Users\regulated\Desktop\schoolvs\bpa1\CS_330_####\CS_330_####\obj\Debug\net8.0-windows\refint\CS_330_####.dll
+C:\Users\regulated\Desktop\schoolvs\bpa1\CS_330_####\CS_330_####\obj\Debug\net8.0-windows\CS_330_####.pdb
