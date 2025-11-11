@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ps27spalumbo\\Desktop\\bpa1\\CS_330_####\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8C983516-D9A6-43CC-A6B5-80258692D574}|CS_330_####\\CS_330_####.csproj|c:\\users\\ps27spalumbo\\desktop\\bpa1\\cs_330_####\\cs_330_####\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{8C983516-D9A6-43CC-A6B5-80258692D574}|CS_330_####\\CS_330_####.csproj|solutionrelative:cs_330_####\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ps27spalumbo\\Desktop\\bpa1\\CS_330_####\\CS_330_####\\Form1.cs",
+              "RelativeDocumentMoniker": "CS_330_####\\Form1.cs",
+              "ToolTip": "C:\\Users\\ps27spalumbo\\Desktop\\bpa1\\CS_330_####\\CS_330_####\\Form1.cs [Design]",
+              "RelativeToolTip": "CS_330_####\\Form1.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-11T14:15:58.415Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
