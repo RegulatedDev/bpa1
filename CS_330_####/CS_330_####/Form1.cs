@@ -9,10 +9,10 @@ namespace CS_330_____
         {
             InitializeComponent();
         }
-        
+
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            DialogResult box = MessageBox.Show("Are you sure you wish to exit the Unit Conve", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            DialogResult box = MessageBox.Show("Are you sure you wish to exit the Unit Conversion?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (box == DialogResult.No)
             {
                 e.Cancel = true;
@@ -26,29 +26,69 @@ namespace CS_330_____
 
         private void tabControl1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            List<TextBox> textBoxes = new List<TextBox>();
+
+            if (sender == literBox)
+            {
+                bool worked = double.TryParse(literBox.Text, out double liters);
+                pintBox.Text = (liters * 2.113).ToString();
+                quartBox.Text = (liters * 1.057).ToString();
+                gallonBox.Text = (liters * 3.785).ToString();
+            }
+            else if (sender == pintBox)
+            {
+                bool worked = double.TryParse(literBox.Text, out double pints);
+                literBox.Text = (pints / 2.113).ToString();
+                quartBox.Text=(pints/2).ToString();
+                gallonBox.Text = (pints / 8).ToString();
+            }
+            else if(sender == quartBox)
+            {
+                bool worked = double.TryParse(literBox.Text, out double quarts);
+                literBox.Text = (quarts / 1.057).ToString();
+                pintBox.Text=(quarts*2).ToString();
+                gallonBox.Text = (quarts / 4).ToString();
+            }
+            else if (sender == gallonBox)
+            {
+                bool worked = double.TryParse(literBox.Text, out double gallons);
+                literBox.Text = (gallons * 3.785).ToString();
+                pintBox.Text =(gallons)
+            }
+            /*List<TextBox> textBoxes = new List<TextBox>();
             textBoxes.AddRange(new TextBox[] { literBox, pintBox, quartBox, gallonBox });
             for (int i = 0; i < textBoxes.Count; i++)
             {
                 TextBox textBox = textBoxes[i];
                 if (!textBox.Focused)
                 {
-                    if (e.KeyChar == (char)Keys.Back)
+                    Console.WriteLine(e.KeyChar +" before");
+                    if (char.IsDigit(e.KeyChar) || e.KeyChar.ToString() == ".")
                     {
-                        Console.WriteLine("gdrghdh");
-                        textBox.Text.Remove(textBox.TextLength-1);
-                    }
-                    if (textBox.TextLength == 0)
-                    {
-                        textBox.Text = e.KeyChar.ToString();
+                        if (sender == literBox)
+                        {
+
+                        }
+                        if (textBox.TextLength == 0)
+                        {
+                            textBox.Text = e.KeyChar.ToString();
+                        }
+                        else
+                        {
+                            Console.WriteLine(e.KeyChar + " after");
+                            textBox.Text += e.KeyChar.ToString();
+
+                        }
                     }
                     else
                     {
-                        Console.WriteLine(e.KeyChar);
-                        textBox.Text += e.KeyChar.ToString();
+                        e.Handled = true;
                     }
                 }
-            }
+                else
+                {
+                    sender = textBox;
+                }
+            }*/
         }
     }
 }

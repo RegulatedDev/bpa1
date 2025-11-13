@@ -99,6 +99,7 @@
             gallonBox.Name = "gallonBox";
             gallonBox.Size = new Size(100, 23);
             gallonBox.TabIndex = 7;
+            gallonBox.KeyPress += tabControl1_KeyPress;
             // 
             // quartBox
             // 
@@ -106,6 +107,7 @@
             quartBox.Name = "quartBox";
             quartBox.Size = new Size(100, 23);
             quartBox.TabIndex = 6;
+            quartBox.KeyPress += tabControl1_KeyPress;
             // 
             // pintBox
             // 
@@ -113,6 +115,7 @@
             pintBox.Name = "pintBox";
             pintBox.Size = new Size(100, 23);
             pintBox.TabIndex = 5;
+            pintBox.KeyPress += tabControl1_KeyPress;
             // 
             // literBox
             // 
@@ -120,6 +123,7 @@
             literBox.Name = "literBox";
             literBox.Size = new Size(100, 23);
             literBox.TabIndex = 4;
+            literBox.KeyPress += tabControl1_KeyPress;
             // 
             // label4
             // 
